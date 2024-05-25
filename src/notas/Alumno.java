@@ -49,16 +49,7 @@ public class Alumno {
     }
 
 
-    public double calcularMedia() {
-        if (registros.isEmpty()) {
-            return 0.0;
-        }
-        double suma = 0.0;
-        for (Registro registro : registros) {
-            suma += registro.getNota();
-        }
-        return suma / registros.size();
-    }
+
 
     @Override
     public String toString() {
